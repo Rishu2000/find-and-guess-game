@@ -5,8 +5,8 @@ import React, { Component } from 'react'
 export default class App extends Component {
   handleClick = (e) => {
     e.preventDefault();
-    const {screenX,screenY,clientX,clientY,pageX,pageY,movementX,movementY} = e;
-    console.log(screenX,screenY,clientX,clientY,pageX,pageY,movementX,movementY);
+    const {pageX,pageY} = e;
+    console.log(pageX,pageY);
   }
   render() {
     return (
