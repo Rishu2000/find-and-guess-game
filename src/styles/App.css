@@ -16,6 +16,6 @@ body{
   -background-attachment: local;
 }
 body,.App,.clickArea{
-  width: 760px;           /* width: 100%; will not work*/
-  height: 380px;          /* height: 100%; will not work*/
+  width: 760px;             /* width: 100%; will not work*/
+  height: 380px;            /* height: 100%; will not work*/
 }
