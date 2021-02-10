@@ -1,0 +1,13 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  background: url("../assets/escape-room-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  -background-size: 800px 380px;
+}
