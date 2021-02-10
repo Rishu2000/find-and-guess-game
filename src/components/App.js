@@ -13,7 +13,7 @@ export default class App extends Component {
       if(window.prompt("What Do you see?") === "picture 1"){
         window.alert("Wow You won!");
       }else{
-        alert("Try Again!");
+        window.alert("Try Again!");
       }
     }
     //For Picture 2
@@ -21,7 +21,7 @@ export default class App extends Component {
       if(window.prompt("What Do you see?") === "picture 2"){
         window.alert("Wow You won!");
       }else{
-        alert("Try Again!");
+        window.alert("Try Again!");
       }
     }
     //For Picture 3
@@ -29,7 +29,7 @@ export default class App extends Component {
       if(window.prompt("What Do you see?") === "picture 3"){
         window.alert("Wow You won!");
       }else{
-        alert("Try Again!");
+        window.alert("Try Again!");
       }
     }
   }
