@@ -30,3 +30,9 @@ img{
   padding-right: 10px;
   width: 50px;
 }
+img.solved{
+  opacity: 0.5;
+}
+img.unsolved{
+  opacity: 1;
+}
