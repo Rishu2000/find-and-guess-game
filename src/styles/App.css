@@ -10,14 +10,14 @@ body{
   -background-size: cover;
   background-size: 770px 380px;
   color: #fff;
-  width: 760px;
+  width: 770px;
   height: 380px;
   -overflow: scroll;
   -background-attachment: local;
 }
 html,body,#root,.App,.clickArea{
   position: relative;       /*nesassary to put puzzle container at bootom right corner*/
-  width: 760px;             /* width: 100%; will not work*/
+  width: 770px;             /* width: 100%; will not work*/
   height: 380px;            /* height: 100%; will not work*/
 }
 .puzzle{
@@ -36,6 +36,16 @@ html,body,#root,.App,.clickArea{
 .clickArea .puzzle img{
   padding-right: 10px;
   width: 50px;
+}
+.clickArea.finalSolved::before{
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 img.solved{
   opacity: 0.5;

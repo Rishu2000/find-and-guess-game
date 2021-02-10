@@ -48,10 +48,11 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="clickArea" onClick={this.handleClick}>
-          <div className="solvedFinal">
+        <div className={"clickArea"+(this.state.pick1 && this.state.pick2 && this.state.pick3?" finalSolved":"")} onClick={this.handleClick}>
+          {this.state.pick1 && this.state.pick2 && this.state.pick3 &&
+          (<div className="solvedFinal">
             <img src={solved} alt="Solved"/>
-          </div>
+          </div>)}
         <div className="puzzle">
           <img src={this.state.pick1?complete:puzzle} alt="Puzzle 1" className={this.state.pick1?"solved":"unsolved"}/>
           <img src={this.state.pick2?complete:puzzle} alt="Puzzle 2" className={this.state.pick2?"solved":"unsolved"}/>
