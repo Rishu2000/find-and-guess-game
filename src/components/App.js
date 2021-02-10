@@ -46,7 +46,9 @@ export default class App extends Component {
     return (
       <div className="App">
         <div className="clickArea" onClick={this.handleClick}>
-        <div className="puzzle"></div>
+        <div className="puzzle">
+
+        </div>
         </div>
       </div>
     )

@@ -15,7 +15,14 @@ body{
   -overflow: scroll;
   -background-attachment: local;
 }
-body,.App,.clickArea{
+html,body,#root,.App,.clickArea{
+  position: relative;       /*nesassary to put puzzle container at bootom right corner*/
   width: 760px;             /* width: 100%; will not work*/
   height: 380px;            /* height: 100%; will not work*/
+}
+.puzzle{
+  position: absolute;       /*nesassary to put puzzle container at bootom right corner*/
+  bottom: 0;
+  right: 0;
+  padding: 15px;
 }
