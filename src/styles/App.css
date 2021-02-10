@@ -7,7 +7,11 @@
 body{
   background: url("../assets/escape-room-bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  -background-size: cover;
+  background-size: 770px 380px;
   color: #fff;
-  -background-size: 800px 380px;
+  width: 760px;
+  height: 380px;
+  -overflow: scroll;
+  -background-attachment: local;
 }
