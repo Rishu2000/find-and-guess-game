@@ -2,6 +2,8 @@ import "../styles/App.css";
 
 import React, { Component } from 'react'
 import {clickedCoords} from "../helper/coords"
+import complete from "../assets/complete.png"
+import puzzle from "../assets/puzzle.png"
 
 export default class App extends Component {
   state = {
@@ -47,7 +49,9 @@ export default class App extends Component {
       <div className="App">
         <div className="clickArea" onClick={this.handleClick}>
         <div className="puzzle">
-
+          <img src={this.state.pick1?complete:puzzle} alt="Puzzle 1" className={this.state.pick1?"solved":"unsolved"}/>
+          <img src={this.state.pick2?complete:puzzle} alt="Puzzle 2" className={this.state.pick2?"solved":"unsolved"}/>
+          <img src={this.state.pick3?complete:puzzle} alt="Puzzle 3" className={this.state.pick3?"solved":"unsolved"}/>
         </div>
         </div>
       </div>
