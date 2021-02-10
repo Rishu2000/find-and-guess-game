@@ -26,7 +26,14 @@ html,body,#root,.App,.clickArea{
   right: 0;
   padding: 15px;
 }
-img{
+.clickArea .solvedFinal img{
+  position: fixed;
+  top: 18%;
+  left: 15%;
+  width: 500px;
+  height: 250px;
+}
+.clickArea .puzzle img{
   padding-right: 10px;
   width: 50px;
 }
